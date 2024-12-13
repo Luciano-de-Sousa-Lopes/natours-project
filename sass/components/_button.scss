@@ -22,6 +22,16 @@
     color: $color-grey-dark;
   }
 
+  &--green {
+    z-index: 1;
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary-dark;
+    }
+  }
+
   &--animated {
     animation-name: move-in-from-bottom;
     animation-duration: 1.5s;
@@ -40,10 +50,6 @@
     left: 0;
     z-index: -1;
     transition: all 0.3s;
-  }
-
-  &-white::after {
-    background-color: $color-white;
   }
 
   &:hover::after {
