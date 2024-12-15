@@ -174,15 +174,16 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #7ed56f;
+  font-weight: bold;
+  color: #28b485;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #7ed56f;
-  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #28b485;
+  padding: 1rem 2rem;
   transition: all 0.3s; }
 
 .btn-text:hover {
-  background-color: #7ed56f;
+  background-color: #28b485;
   color: #eee;
   box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.15);
   transform: translateY(-0.05rem); }
@@ -329,6 +330,72 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(51, 51, 51, 0.1);
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 5px;
+  padding: 6rem;
+  padding-left: 9rem;
+  color: #333;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: cornflowerblue;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(12deg); }
+  .story__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 120%;
+    transition: all 1s; }
+  .story__text {
+    transform: skewX(20deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #eee;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    opacity: 0;
+    backface-visibility: hidden;
+    text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black, -2px 0 2px red, 0 2px 2px red, 2px 0 2px red, 0 -2px 2px red;
+    letter-spacing: 1px; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__image {
+    height: 100%;
+    filter: blur(5px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.25;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .header {
   position: relative;
   height: 95vh;
@@ -397,3 +464,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0; }
