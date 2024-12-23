@@ -91,7 +91,8 @@ body {
       position: relative;
       animation-name: slide-from-bottom;
       animation-duration: 3s;
-      animation-delay: 0.5s; }
+      animation-delay: 0.5s;
+      animation-fill-mode: backwards; }
     .header .btn:active {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
       transform: translateY(0.5rem); }

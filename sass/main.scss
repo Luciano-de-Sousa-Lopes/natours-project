@@ -134,6 +134,7 @@ body {
       animation-name: slide-from-bottom;
       animation-duration: 3s;
       animation-delay: 0.5s;
+      animation-fill-mode: backwards;
     }
 
     &:active {
