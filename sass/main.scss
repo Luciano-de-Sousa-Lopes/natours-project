@@ -1,0 +1,15 @@
+$primary-color: #55c57a;
+$primary-light-color: #7ed56f;
+$primary-dark-color: #28b485;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
