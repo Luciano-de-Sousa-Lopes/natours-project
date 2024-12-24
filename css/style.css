@@ -15,7 +15,7 @@ body {
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
-  padding: 2rem; }
+  padding: 3rem; }
 
 .header {
   position: relative;
@@ -27,11 +27,11 @@ body {
   text-align: center; }
   .header__logo-box {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 4rem;
+    left: 4rem;
     display: inline-block; }
   .header__logo {
-    height: 4rem; }
+    height: 3.5rem; }
   .header__text-box {
     width: 80%;
     position: absolute;
@@ -41,7 +41,8 @@ body {
   .header .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    margin-bottom: 6rem; }
     .header .heading-primary__main, .header .heading-primary__sub {
       display: block;
       font-weight: 400; }
@@ -61,7 +62,6 @@ body {
     position: relative;
     display: inline-block;
     padding: 1.5rem 2.5rem;
-    margin-top: 5rem;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
