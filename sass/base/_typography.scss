@@ -1,0 +1,37 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: $color-gray;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main,
+  &--sub {
+    display: block;
+    font-weight: 400;
+  }
+
+  &--main {
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation-name: slide-from-left;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+  }
+
+  &--sub {
+    font-size: 2rem;
+    letter-spacing: 1.75rem;
+    animation-name: slide-from-right;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+  }
+}
