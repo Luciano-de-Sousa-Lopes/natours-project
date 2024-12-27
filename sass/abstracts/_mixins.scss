@@ -4,3 +4,9 @@
   left: $parent-left;
   transform: translate($self-top, $self-left);
 }
+
+@mixin clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
