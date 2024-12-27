@@ -43,16 +43,16 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem; }
-    .header .heading-primary__main, .header .heading-primary__sub {
+    .header .heading-primary--main, .header .heading-primary--sub {
       display: block;
       font-weight: 400; }
-    .header .heading-primary__main {
+    .header .heading-primary--main {
       font-size: 6rem;
       letter-spacing: 3.5rem;
       animation-name: slide-from-left;
       animation-duration: 2s;
       animation-delay: 0.5s; }
-    .header .heading-primary__sub {
+    .header .heading-primary--sub {
       font-size: 2rem;
       letter-spacing: 1.75rem;
       animation-name: slide-from-right;

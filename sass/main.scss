@@ -70,13 +70,13 @@ body {
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
-    &__main,
-    &__sub {
+    &--main,
+    &--sub {
       display: block;
       font-weight: 400;
     }
 
-    &__main {
+    &--main {
       font-size: 6rem;
       letter-spacing: 3.5rem;
       animation-name: slide-from-left;
@@ -84,7 +84,7 @@ body {
       animation-delay: 0.5s;
     }
 
-    &__sub {
+    &--sub {
       font-size: 2rem;
       letter-spacing: 1.75rem;
       animation-name: slide-from-right;
