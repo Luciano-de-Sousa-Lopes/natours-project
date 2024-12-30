@@ -1,0 +1,95 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.6rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+
+  &__icon {
+    font-size: 6rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to top,
+      $primary-light-color,
+      $primary-dark-color
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation-name: gloing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}
+
+@keyframes gloing {
+  0% {
+    background-image: linear-gradient(
+      to right top,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  15% {
+    background-image: linear-gradient(
+      to right,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      to right bottom,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  45% {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      to left bottom,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  75% {
+    background-image: linear-gradient(
+      to left,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      to left top,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  95% {
+    background-image: linear-gradient(
+      to top,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to top right,
+      $primary-light-color,
+      $primary-dark-color
+    );
+  }
+}
